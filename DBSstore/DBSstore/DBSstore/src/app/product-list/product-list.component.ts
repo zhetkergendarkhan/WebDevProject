@@ -44,6 +44,11 @@ export class ProductListComponent implements OnInit, OnDestroy {
     this.destroy$.next();
     this.destroy$.complete();
   }
+  sort(){
+    const a = this.service.sort(this.products);
+    a.subscribe(cat => this.products = cat );
+
+  }
 
 
 }

@@ -44,7 +44,13 @@
   color: black;
   font-style: italic
 }
-
+button{
+  font-style: italic;
+  width: 90px;
+  height: 80px;
+  color:black;
+  background-color: #94c0c2;
+}
 .product_item .product_price{
   font-weight: normal;
   font-style: italic

@@ -26,5 +26,10 @@ export class ProductListService {
     });
     return of(categoryProducts);
   }
+  // @ts-ignore
+  sort(arr: Product[]): Observable<Product[]>{
+    arr.sort((a,b)=>(a.price>b.price)?1:-1)
+    return of(arr);
+  }
 
 }
